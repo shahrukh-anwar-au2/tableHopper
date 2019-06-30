@@ -1,0 +1,32 @@
+#searchcontainer {
+  background: url(/images/customerhomeback.jpg) no-repeat;
+  background-size: cover;
+  height: 620px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#searchbox {
+  width: 800px;
+  height: 60px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  float: left;
+  padding: 10px;
+  color: black;
+}
+#searchbtn {
+  float: right;
+  height: 60px;
+  width: 200px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: #cb202d;
+  color: #ffffff;
+}
+form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 12px;
+  border-radius: 5px;
+}

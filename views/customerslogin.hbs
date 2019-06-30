@@ -1,0 +1,57 @@
+<div class="container" id="container">
+    <div class="card" id="login">
+        <div class="card-body">
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" name="username">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                </div>
+                <button type="submit" class="btn btn-dark btn-block"
+                    style="background-color: #cb202d; border:none">Login</button>
+            </form>
+            <a href="#" class="small" id="forgotlink">Forgot Password?</a>
+            <p class="small">Don't have an Account? <a href="#" id="signuplink">Sign Up Here!</a></p>
+        </div>
+    </div>
+    <div class="card d-none" id="signup">
+        <div class="card-body">
+            <form action="/signup" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Full Name" name="fullname">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" name="username">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="What Is your favorite book?"
+                        name="securityQues">
+                </div>
+                <button type="submit" class="btn btn-dark btn-block" style="background-color: #cb202d; border:none">Sign
+                    Up</button>
+            </form>
+        </div>
+    </div>
+    <div class="card d-none" id="forgot">
+        <div class="card-body">
+            <form action="/forgot" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" name="username">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="What Is your favorite book?"
+                        name="securityQues">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                </div>
+                <button type="submit" class="btn btn-dark btn-block"
+                    style="background-color: #cb202d; border:none">Update</button>
+            </form>
+        </div>
+    </div>
+</div>

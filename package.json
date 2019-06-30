@@ -1,0 +1,28 @@
+{
+  "name": "200-ok_restaurant-review",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attainu-falcon/200-ok_restaurant-review.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/attainu-falcon/200-ok_restaurant-review/issues"
+  },
+  "homepage": "https://github.com/attainu-falcon/200-ok_restaurant-review#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.16.2",
+    "mongodb": "^3.2.7",
+    "cloudinary": "^1.14.0",
+    "dotenv": "^8.0.0",
+    "multer": "^1.4.1"
+  }
+}

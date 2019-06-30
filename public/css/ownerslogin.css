@@ -1,0 +1,23 @@
+body {
+  background: url(/images/login.jpg) no-repeat;
+  background-size: cover;
+}
+#container {
+  height: calc(100vh - 128px);
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login,
+#signup,
+#forgot {
+  width: 350px;
+}
+a {
+  text-decoration: none;
+  color: #cb202d;
+}
+a:hover {
+  text-decoration: none;
+}
