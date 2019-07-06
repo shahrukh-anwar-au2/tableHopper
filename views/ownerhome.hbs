@@ -1,0 +1,45 @@
+<div id="imgcontainer"></div>
+<div class="container text-center">
+    <h1 class="mt-4 mb-0">My Restaurants</h1>
+    <hr class="mt-3 mb-5" style="border-top: 1px solid #cb202d">
+</div>
+<div class="container mb-4">
+    <div class="card-deck">
+        {{#each data}}
+        <div class="card mb-3" style="min-width: 300px; max-width: 350px; height: 550px">
+            <img src="{{this.photo1}}" class="card-img-top">
+            <div class="card-body" id="content">
+                <h5 class="card-title">{{this.restaurantName}} <span class="avgRating"
+                        style="float:right; color:#fbb710;">{{this.avgRating}}</span></h5>
+                <hr>
+                <p class="card-text" style="height:200px; max-height: 200px; overflow:auto;">{{this.description}}</p>
+                <hr>
+                <a href="/ownerhome/{{this._id}}" class="dlt-btn ml-2" style="color: #cb202d; float:right;"><i
+                        class="fa fa-trash"></i></a>
+                <button type="button" class="edit-btn"
+                    style="float: right; color: #cb202d; border:0; background-color: white"><i
+                        class="fa fa-edit"></i></button>
+            </div>
+            <div class="card-body d-none" id="update">
+                <h5 class="card-title">{{this.restaurantName}} <span class="avgRating"
+                        style="float:right; color:#fbb710;">{{this.avgRating}}</span></h5>
+                <hr>
+                <form action="/ownerhome/update" method="POST">
+                    <div class="form-group d-none">
+                        <input class="form-control" type="text" name="restaurantName" value="{{this.restaurantName}}">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="restaurantSlogan"
+                            value="{{this.restaurantSlogan}}">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="description" rows="6">{{this.description}}</textarea>
+                    </div>
+                    <input class="btn btn-dark btn-block" type="submit" value="Update"
+                        style="background-color: #cb202d; border:none">
+                </form>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

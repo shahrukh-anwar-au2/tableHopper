@@ -5,6 +5,7 @@ router.get("/", (req, res) => {
   res.render("ownerslogin", {
     title: "Login",
     assets: "ownerslogin",
+    logolink: "/ownerslogin",
     navlink: "Login as Restaurant Owner",
     option1: "Login as Customer",
     navadd1: "/"
@@ -29,10 +30,12 @@ router.post("/login", (req, res) => {
           req.body.password == result[i].password
         ) {
           req.session.ownerloggedin = true;
-          req.session.username = result[i].username;
+          req.app.locals.ownerloggedid = req.session.ownerloggedin;
+          req.session.ownerusername = result[i].username;
+          req.app.locals.ownerusername = req.session.ownerusername;
         }
       }
-      res.redirect("/ownershome");
+      res.redirect("/ownerhome");
     });
 });
 
@@ -61,6 +64,7 @@ router.post("/forgot", (req, res) => {
 
 router.get("/logout", (req, res) => {
   req.session.destroy();
+  req.app.locals.ownerloggedin = false;
   res.redirect("/ownerslogin");
 });
 

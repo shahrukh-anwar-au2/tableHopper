@@ -5,8 +5,6 @@ const multer = require("multer");
 const cloudinary = require("cloudinary").v2;
 var reviews;
 var resId;
-// var storage = multer.memoryStorage();
-// var upload = multer({ storage: storage });
 var upload = multer({ dest: "public/images" });
 
 cloudinary.config({

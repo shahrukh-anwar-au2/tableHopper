@@ -5,6 +5,7 @@ router.get("/", (req, res) => {
   res.render("customerslogin", {
     title: "Login",
     assets: "customerslogin",
+    logolink: "/",
     navlink: "Login as Customer",
     option1: "Login as Restaurant Owner",
     navadd1: "/ownerslogin"
@@ -63,6 +64,7 @@ router.post("/forgot", (req, res) => {
 
 router.get("/logout", (req, res) => {
   req.session.destroy();
+  req.app.locals.loggedin = false;
   res.redirect("/");
 });
 

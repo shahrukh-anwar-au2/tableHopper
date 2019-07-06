@@ -1,22 +1,8 @@
 {
-  "name": "200-ok_restaurant-review",
+  "name": "table_hopper",
   "version": "1.0.0",
-  "description": "",
+  "description": "Restaurant Review App",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/attainu-falcon/200-ok_restaurant-review.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/attainu-falcon/200-ok_restaurant-review/issues"
-  },
-  "homepage": "https://github.com/attainu-falcon/200-ok_restaurant-review#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
@@ -25,5 +11,20 @@
     "cloudinary": "^1.14.0",
     "dotenv": "^8.0.0",
     "multer": "^1.4.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahrukh-anwar-au2/tableHopper.git"
+  },
+  "author": "Shahrukh Anwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahrukh-anwar-au2/tableHopper/issues"
+  },
+  "homepage": "https://github.com/shahrukh-anwar-au2/tableHopper#readme"
 }
