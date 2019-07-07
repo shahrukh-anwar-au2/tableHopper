@@ -65,6 +65,7 @@ router.post("/forgot", (req, res) => {
 router.get("/logout", (req, res) => {
   req.session.destroy();
   req.app.locals.ownerloggedin = false;
+  req.app.locals.ownerusername = "";
   res.redirect("/ownerslogin");
 });
 
