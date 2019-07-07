@@ -15,6 +15,7 @@ router.get("/", (req, res) => {
   res.render("addrestaurant", {
     title: "Add Restaurant",
     assets: "addrestaurant",
+    logolink: "/ownerhome",
     navlink: req.app.locals.ownerusername,
     option1: "Home",
     navadd1: "/ownerhome",
