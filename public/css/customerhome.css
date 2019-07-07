@@ -1,3 +1,7 @@
+#addlink {
+  display: none;
+}
+
 #searchcontainer {
   background: url(/images/customerhomeback.jpg) no-repeat;
   background-size: cover;

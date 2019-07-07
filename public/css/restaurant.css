@@ -1,3 +1,7 @@
+#addlink {
+  display: none;
+}
+
 #gallery::-webkit-scrollbar {
   width: 12px;
 }
