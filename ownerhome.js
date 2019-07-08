@@ -3,7 +3,7 @@ const router = express.Router();
 const ObjectId = require("mongodb").ObjectId;
 
 router.get("/", (req, res) => {
-  if (req.app.locals.ownerloggedid == true) {
+  if (req.app.locals.ownerloggedin == true) {
     const db = req.app.locals.db;
     db.collection("restaurants")
       .find({ ownerName: req.app.locals.ownerusername })

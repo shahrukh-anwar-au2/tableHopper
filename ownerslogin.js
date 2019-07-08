@@ -30,7 +30,7 @@ router.post("/login", (req, res) => {
           req.body.password == result[i].password
         ) {
           req.session.ownerloggedin = true;
-          req.app.locals.ownerloggedid = req.session.ownerloggedin;
+          req.app.locals.ownerloggedin = req.session.ownerloggedin;
           req.session.ownerusername = result[i].username;
           req.app.locals.ownerusername = req.session.ownerusername;
         }
