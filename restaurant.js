@@ -14,7 +14,7 @@ cloudinary.config({
 });
 
 router.get("/:id", (req, res) => {
-  if (req.app.locals.loggedid == true) {
+  if (req.app.locals.loggedin == true) {
     resId = req.params.id;
     var db = req.app.locals.db;
     db.collection("reviews")

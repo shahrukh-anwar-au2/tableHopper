@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  if (req.app.locals.loggedid == true) {
+  if (req.app.locals.loggedin == true) {
     const db = req.app.locals.db;
     db.collection("restaurants")
       .find()
