@@ -1,4 +1,4 @@
-# Table Hopper
+# [Table Hopper](https://table-hopper-shahrukh.herokuapp.com)
 
 ## Introduction
 
@@ -15,8 +15,12 @@ On the other hand, you can also log in as a customer and you’ll be able to see
 - Express.js
 - MongoDB
 - Handlebars
+- Cloudinary
 
 ![Login Page](/public/screenshots/login.png)
+
 ![Customer Home Page](/public/screenshots/customer-home.png)
+
 ![Top Restaurants](/public/screenshots/top-restaurants.png)
+
 ![Restaurant Owner Page](/public/screenshots/owner-home.png)
