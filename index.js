@@ -16,7 +16,7 @@ app.locals.ownerloggedin;
 app.locals.ownerusername;
 var url = process.env.MY_DB;
 
-mongoClient.connect(url, { connectWithNoPrimary: true }, (err, client) => {
+mongoClient.connect(url, {useUnifiedTopology: true, useNewUrlParser: true, connectWithNoPrimary: true }, (err, client) => {
   if (err) throw err;
   app.locals.db = client.db("tableHopper");
 });
